@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Главная</title>
+    </head>
+<body>
+    <div >
+        
+
+    </div>
+    <div class="block"></div>
+    <main class="container1"> 
+        <div id="filter" onclick="show('none'),show2('none')"></div>
+        <form id="modalFormreg">
+            <h1 class="zagol">Регистрация</h1>
+            <img src="img/close.png" class="close" onclick="show('none')">
+            <input class="form1" type="text" name="fio" autocomplete="off" placeholder="ФИО" required>
+            <input class="form2" type="text" name="login" autocomplete="off" placeholder="Логин" required>
+            <input class="form3" type="email" name="email" autocomplete="off" placeholder="Email" required>
+            <input class="form4" type="password" name="password" placeholder="Пароль" required>
+            <input class="form5" type="password" name="password2" placeholder="Повтор пароля" required>
+            <input type="checkbox" class="check" name="check">
+            <label for="check" class="check2">Соласие на обработку персональных данных</label>
+            <button class="but">Зарегистрироваться</button>
+        </form>
+        <form id="modalFormavto">
+            <h1 class="zagol">Авторизация</h1>
+            <img src="img/close.png" class="close" onclick="show2('none')">
+            <input class="form1" type="text" name="login" autocomplete="off" placeholder="Логин" required>
+            <input class="form2" type="password" name="password" placeholder="Пароль" required>
+            <button class="but2">Вход</button>
+        </form>
+        <div class="header">
+            <img src="img/logo.png" class="img_logo"> 
+            <a class="header__reg" onclick="show('block')">Регистрация</a>
+            <a class="header__logout" onclick="show2('block')">Вход</a>
+        </div> 
+        <div class="resh">
+            <p>РЕШЕНО ЗАЯВОК</p>
+        </div>
+        <div  class="resh2">
+            <p>272</p>
+        </div>
+        <div class="imggl">
+            <img src="img/imggl.png">
+        </div>
+        <p class="posled">ПОСЛЕДНИЕ РЕАЛИЗОВАННЫЕ ЗАЯВКИ</p>
+        <img src="img/img1.png" class="img1">
+            <div class="block1">
+                
+                <p>Ремонт на ул. Холмогорова</p>
+                <p>8.09.22</p>
+                <p>Дорожные работы</p>
+            </div>
+            <img src="img/img2.png" class="img2">
+            <div class="block2">
+               
+                <p>Ремонт на ул. Холмогорова</p>
+                <p>8.09.22</p>
+                <p>Дорожные работы</p>
+            </div>
+            <img src="img/logo.png" class="imgfoot">
+        <!-- <div class="qwerty"></div> -->
+        <script>
+            var show = function (state) {
+                document.getElementById('modalFormreg').style.display = state;
+                document.getElementById('filter').style.display = state;
+            }
+            var show2 = function (state) {
+                document.getElementById('modalFormavto').style.display = state;
+                document.getElementById('filter').style.display = state;
+            }
+        </script>
+    </main> 
+    <div class="foot"></div>
+</body>
+</html>
