@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Inter';
     src: url('../font/Inter-Medium.otf');
 }
@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'Inter light';
     src: url('../font/Inter-Light.otf');
-}
+} */
 
 .container1 {
     position: relative;
